@@ -1,5 +1,24 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const dirOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
+
+
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+    eleventyConfig.setQuietMode(true);
+    eleventyConfig.addPlugin(dirOutputPlugin, {
+        // Customize columns
+        columns: {
+            filesize: true, // Use `false` to disable
+            benchmark: true, // Use `false` to disable
+        },
+
+        // Will show in yellow if greater than this number of bytes
+        warningFileSize: 400 * 1000,
+    });
+
     eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets/js");
     // eleventyConfig.addPassthroughCopy("src/assets/imgs");
     
     return {
