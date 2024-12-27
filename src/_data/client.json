@@ -1,5 +1,27 @@
 {
     "name": "Sandbox Website",
     "domain": "https://dariazac.github.io/sandbox",
-    "location": "Canada"
+    "email": "contact@restaurant.com",
+    "phoneForTel": "555-123-4567",
+    "phoneFormatted": "(555) 123-4567",
+    "location": "Canada",
+    "address": {
+        "lineOne": "1 Old Mill Dr,",
+        "lineTwo": "York, ON M6S 0A1",
+        "city": "Toronto",
+        "province": "ON",
+        "postal": "M6S 0A1",
+        "country": "CA",
+        "mapLink": "https://maps.app.goo.gl/f7xfw91PoGLzwxF77"
+    },
+    "year": 2024,
+    "websiteCreator": "SandboxDesign",
+    "hours": {
+        "regular": [
+            "Mon - Thurs: 11am to 9pm",
+            "Fri: 11am to 10pm",
+            "Sat: 10am to 9pm"
+        ],
+        "holidays": {"name": "New Year's Day", "date": "Jan 01", "hours": "Closed"}
+    }
 }

@@ -1,55 +1,79 @@
+
 <!-- ============================================ -->
-<!--                  Footer                      -->
+<!--                   Footer                     -->
 <!-- ============================================ -->
 
-<section id="footer-1390">
+<footer id="cs-footer-272">
     <div class="cs-container">
-        <div class="cs-top">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="">
-                <img class="cs-logo-img" loading="lazy" decoding="async" src="https://codestitch.app/frontend/images/logo-white.svg" alt="logo" width="209" height="40">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg" alt="logo" width="240" height="32">
+                <!-- Lighter Dark Mode Logo, remove if not needed -->
+                <img class="cs-logo-img dark" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo-light.svg" alt="logo" width="240" height="32">
             </a>
-            <ul class="cs-ul">
-                {% set navPages = collections.all | eleventyNavigation %}
-                {% for entry in navPages %}
-                    <li class="cs-li">
-                        <a href="{{ entry.link }}" class="cs-link">{{ entry.key }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tincidunt vitae velit dolor cras tellus nisl habitant. Consectetur pellentesque dignissim sed amet.
+            </p>
         </div>
-        <div class="cs-bottom">
-            <!--Social-->
-            <ul class="cs-social">
-                <li class="cs-social-li">
-                    <a href="{{ client.social.facebook }}" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
+        <!-- Contact Info -->
+        <ul class="cs-contact">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}">
+                    {{ client.address.lineOne }}<br> {{ client.address.lineTwo }}
+                </a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="tel: 123-456-7890">{{ client.phoneFormatted }}</a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="mailto:info@codestitch.com">{{ client.email }}</a>
+            </li>
+        </ul>
+        <!-- Hours -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Hours</span>
+            </li>
+            {% for day in client.hours.regular %}
+            <li class="cs-nav-li">{{ day }}</li>
+            {% endfor %}
+        </ul>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            {% set navPages = collections.all | eleventyNavigation %}
+            {% for entry in navPages %}
+                <li class="cs-nav-li">
+                    <a href="{{ entry.url }}" class="cs-nav-link">{{ entry.key }}</a>
                 </li>
-                <li class="cs-social-li">
-                    <a href="{{ client.social.twitter }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="{{ client.social.instagram }}" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-                <li class="cs-social-li">
-                    <a href="{{ client.social.youtube }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                    </a>
-                </li>
-            </ul>
-            <span class="cs-copyright">
-                © Copyright 2023 -
-                <a href="" class="cs-copyright-link">CodeStitch</a>
-            </span>
-            <div class="cs-flex">
-                <a href="" class="cs-copyright-link">Privacy Policy</a>
-                <span class="cs-separater">|</span>
-                <a href="" class="cs-copyright-link">Terms of Use</a>
-            </div>
-        </div>
+            {% endfor %}
+        </ul>
     </div>
-</section>
+
+    <div class="cs-bottom">
+
+        <!-- socials -->
+        <div class="cs-social">
+            <a class="cs-social-link" aria-label="visit google profile" href="">
+                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+            </a>
+            <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+            </a>
+            <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+            </a>
+        </div>
+        <span class="cs-copyright">
+            © Copyright {{ client.year }} -
+            <a href="" class="cs-copyright-link">{{ client.websiteCreator }}</a>
+        </span>
+    </div>
+</footer>
