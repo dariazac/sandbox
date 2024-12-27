@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include 'basehead.html' %}
+{% block head %}{% endblock %}
+</head>
+<body>
+<main id="main">
+  <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+  {% block mainContent %}
+    {{ content | safe }}
+  {% endblock %}
+</main>
+{% block blockContent %}{% endblock %}
+</body>
+</html>
