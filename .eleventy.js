@@ -17,10 +17,20 @@ module.exports = function(eleventyConfig) {
         warningFileSize: 400 * 1000,
     });
 
-    eleventyConfig.addPassthroughCopy("src/assets/css");
-    eleventyConfig.addPassthroughCopy("src/assets/js");
     // eleventyConfig.addPassthroughCopy("src/assets/imgs");
+    eleventyConfig.addPassthroughCopy("src/assets/js");
+    eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets/_css");
+    // eleventyConfig.addPassthroughCopy("src/assets/sass");
     
+    // // Watch CSS files for changes
+    // eleventyConfig.setBrowserSyncConfig({
+    //     files: 'public/assets/_css/**/*.css'
+    // });
+
+    // eleventyConfig.addWatchTarget("src/assets/sass");
+
+
     return {
         dir: {
             input: 'src',
