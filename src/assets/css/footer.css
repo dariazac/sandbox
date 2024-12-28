@@ -74,10 +74,10 @@
     }
     #cs-footer-272 .cs-social {
         display: inline-flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-start;
         gap: 0.75rem;
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
     }
@@ -110,7 +110,7 @@
     }
     #cs-footer-272 .cs-nav-li {
         list-style: none;
-        margin-bottom: 1rem;
+        margin-bottom: .3rem;
     }
     #cs-footer-272 .cs-nav-li:last-of-type {
         margin-bottom: 0;
