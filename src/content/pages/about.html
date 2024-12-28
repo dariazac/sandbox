@@ -1,6 +1,6 @@
 ---
-layout: layouts/_base.html
-title: "About | Code Stitch Web Designs"
+layout: layouts/page.html
+title: "Our Story"
 description: "Meta description for the page"
 permalink: "about/"
 eleventyNavigation:
@@ -8,6 +8,20 @@ eleventyNavigation:
     order: 200
 ---
 
-<div>
-    <h1>{{ title }}</h1>
-</div>
+<section id="about-1">
+  {% include 'components/banner.html' %}
+
+  <!--                   
+      This is a cs-content section that you can swap out with any cs-content you have in your site that is not a Side By Side. 
+  -->
+
+  <div id="cs-content-831">
+      <span class="cs-topper">Testimonials</span>
+      <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+      <p class="cs-text">
+          At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession.
+      </p>
+  </div>
+
+  {% include 'components/gallery.html' %}
+</section>
