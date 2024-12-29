@@ -1,5 +1,15 @@
-// testing
-body {
-  font-family: sans-serif;
-  background-color: lightblue;
+@use 'abstracts' as *;
+// @use 'base';
+@use 'components' as c;
+@use 'layout';
+@use 'utilities' as u;
+
+html {
+  color: $primary;
+}
+
+@include mq(mobile) {
+  h1 {
+    color: grey;
+  }
 }
