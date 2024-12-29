@@ -1,0 +1,11 @@
+{% extends 'layouts/page.html' %}
+
+{% block extraStyles %}
+{{ super() }}
+<!-- <link rel="stylesheet" href="/assets/css/menu-items.css"> -->
+<link rel="stylesheet" href="/assets/_css/menus.css">
+{% endblock %}
+
+{% block extraContent %}
+{% include 'components/banner.html' %}
+{% endblock %}

@@ -1,8 +1,13 @@
+const yaml = require("js-yaml");
+
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const dirOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 
 
 module.exports = function(eleventyConfig) {
+    // Receives file contents, return parsed data
+    eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
+
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.setQuietMode(true);
@@ -30,6 +35,9 @@ module.exports = function(eleventyConfig) {
 
     // eleventyConfig.addWatchTarget("src/assets/sass");
 
+    eleventyConfig.addCollection('menus', function(collectionApi){
+        return collectionApi.getFilteredByGlob('src/content/menus/pages/**/*.{html,njk}');
+    });
 
     return {
         dir: {

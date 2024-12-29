@@ -1,0 +1,17 @@
+---
+title: Our Menu
+description: "Meta description for the page"
+eleventyComputed:
+  permalink: "menus/"
+---
+
+
+<h1>{{ title }}</h1>
+
+<ul>
+  {% for menu in collections.menus %}
+    <li><a href="{{ menu.url }}">{{ menu.data.title }}</a></li>
+  {% endfor %}
+</ul>
+
+
