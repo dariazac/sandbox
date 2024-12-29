@@ -1,9 +1,11 @@
 node_modules
-
 .cache
-
 .env
-
 .venv
+public
+.DS_Store
+.sass-cache
 
-
+# sass output is in assets/_css
+# but 11ty ignores it if it's gitignored
+# src/assets/_css

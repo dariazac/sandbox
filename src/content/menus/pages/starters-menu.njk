@@ -1,0 +1,31 @@
+---
+title: Starters Menu
+---
+
+
+<section id="pricing-975">
+  {% for menuPage in menuDrinks %}
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"></span>
+            <h2 class="cs-title">{{ menuPage.menuName }}</h2>
+        </div>
+        <div class="cs-menu">
+            <!--Left Menu-->
+            <ul class="cs-menu-group dz-flex">
+              {% for menuItem in menuPage.items %}
+                <li class="cs-menu-item dz-flex-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">{{ menuItem.item | trim }}</span>
+                        <span class="cs-price">{{ menuItem.price }}</span>
+                    </h3>
+                    {% if menuItem.description %}
+                    <p class="cs-menu-text">{{ menuItem.description }}</p>
+                    {% endif %}
+                </li>
+              {%  endfor %}
+            </ul>
+        </div>
+    </div>
+  {% endfor %}
+</section>

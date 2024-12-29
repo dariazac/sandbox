@@ -1,0 +1,28 @@
+{
+    "name": "Sandbox Website",
+    "domain": "https://dariazac.github.io/sandbox",
+    "email": "contact@restaurant.com",
+    "phoneForTel": "555-123-4567",
+    "phoneFormatted": "(555) 123-4567",
+    "location": "Canada",
+    "address": {
+        "lineOne": "1 Old Mill Dr,",
+        "lineTwo": "York, ON M6S 0A1",
+        "city": "Toronto",
+        "province": "ON",
+        "postal": "M6S 0A1",
+        "country": "CA",
+        "mapLink": "https://maps.app.goo.gl/f7xfw91PoGLzwxF77",
+        "mapsrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2886.9961520513525!2d-79.491376!3d43.6482484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37004b796c0f%3A0x47e4fadce1a89653!2sRumi%20Turkish%20Restaurant!5e0!3m2!1sen!2sca!4v1735364571910!5m2!1sen!2sca"
+    },
+    "year": 2024,
+    "websiteCreator": "SandboxDesign",
+    "hours": {
+        "regular": [
+            "Mon - Thurs: 11am to 9pm",
+            "Fri: 11am to 10pm",
+            "Sat: 10am to 9pm"
+        ],
+        "holidays": {"name": "New Year's Day", "date": "Jan 01", "hours": "Closed"}
+    }
+}

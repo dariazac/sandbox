@@ -1,0 +1,163 @@
+- menuName: On Tap / 20 oz Pints
+  items:
+  - item: Guinness Stout
+    price: 11
+  - item: Stella Artois Lager
+    price: 11
+  - item: Erdinger Dunkel
+    price: 11
+  - item: Kronenbourg Blanc
+    price: 11
+  - item: G.L.B Premium Lager
+    price: 9.5
+  - item: G.L.B Red Lager
+    price: 9.5
+  - item: G.L.B Octopus Wants to Fight IPA
+    price: 10
+  - item: Woodhouse Lager
+    price: 9.5
+  - item: Woodhouse IPA
+    price: 10
+  - item: Woodhouse Raspberry Sour
+    price: 10
+  - item: Cowbell Hazy Days Juicy IPA
+    price: 10
+  - item: Cowbell Smooth Sailing Light Lager
+    price: 10
+  - item: Amsterdam Fria Cerveza
+    price: 9.5
+  - item: Lost Craft Old School Pilsner
+    price: 9.5
+  - item: Lost Craft Wildberry Wheat
+    price: 9.5
+  - item: High Park Across the Pond ESB
+    price: 9.5
+
+- menuName: Tall Cans
+  items:
+  - item: Amsterdam Boneshaker IPA
+    price: 9
+  - item: Amsterdam Cruiser Pale Ale
+    price: 9
+  - item: Cowbell Grapefruit Radler
+    price: 9
+  - item: Cowbell Apple Cider
+    price: 9
+  - item: Cowbell Peach Cider
+    price: 9
+  - item: IX Poets Hazy Mariner NEIPA
+    price: 9
+  - item: Woodhouse Lager
+    price: 9
+  - item: GLB Pompous Ass English Ale
+    price: 9
+  - item: GLB Burst New England Pale Ale
+    price: 9
+  - item: Flying Monkeys Reapers and Mowers Dark Lager
+    price: 9
+  - item: Flying Monkeys Crowd Surf Passion Fruit IPA
+    price: 9
+  - item: Flying Monkeys Quantum Hugs Cold IPA
+    price: 9
+
+- menuName: Seltzers
+  items:
+  - item: Flying Monkeys Space Born Unicorn
+    price: 10
+  - item: Flying Monkeys Robots Kiss Butterflies
+    price: 10
+  - item: Flying Monkeys Tangerine Fuzz Machine
+    price: 10
+  - item: Flying Monkeys - Supersonic Puppy Dreams
+    price: 10
+
+- menuName: Bottled Beers
+  items:
+  - item: Red Stripe
+    price: 7
+  - item: Molson Canadian
+    price: 7
+  - item: Labatt Blue
+    price: 7
+  - item: Coors Light
+    price: 7
+  - item: Heineken
+    price: 8
+  - item: Stella
+    price: 8
+  - item: Corona
+    price: 8
+  - item: Corona Non-Alcoholic
+    price: 6
+
+- menuName: Wine
+  items:
+  - item: Commodore Estate Merlot (Australia)
+    price: $9/6oz | $13/9oz | $38/Bottle
+  - item: Commodore Estate Chard (Australia)
+    price: $9/6oz | $13/9oz | $38/Bottle
+  - item: Secret Barrels Red Blend (Chile)
+    price: $9/6oz | $13/9oz | $24/Half Litre | $48/Bottle (1L)
+  - item: Secret Barrels White Blend (Chile)
+    price: $9/6oz | $13/9oz | $24/Half Litre | $48/Bottle (1L)
+  - item: Secret Barrels Rosè (Chile)
+    price: $9/6oz | $13/9oz | $24/Half Litre | $48/Bottle (1L)
+  - item: Cattarratto Pinot Grigio (Italy)
+    price: $10/6oz | $14/9oz | $40/Bottle
+  - item: Misty Cove Sauvignon Blanc (New Zealand)
+    price: $11/6oz | $15/9oz | $44/Bottle
+  - item: San Martino Cuvèe (Italy)
+    price: $10/6oz | $40/Bottle
+  - item: Dominic Estates Cab (Australia)
+    price: $10/6oz | $14/9oz | $40/Bottle
+  - item: Caleo Montepulciano D'Abruzzo (S. Italy)
+    price: $10/6oz | $14/9oz | $40/Bottle
+
+- menuName: Cocktails / 2 oz
+  items:
+  - item: Aperol Spritz
+    price: 14
+  - item: Old Fashioned
+    price: 14
+  - item: Margarita
+    price: 14
+  - item: Moscow Mule
+    price: 14
+  - item: Dark 'N' Stormy
+    price: 14
+  - item: Caesar
+    price: 14
+  - item: Bloody Mary
+    price: 14
+  - item: Negroni
+    price: 14
+  - item: Whiskey Sour
+    price: 14
+  - item: Martini
+    price: 14
+  - item: Sangria (Red or White)
+    price: $12/Glass | $32/Litre
+  - item: Espresso Martini
+    price: 16
+  - item: Frozen Cocktail 
+    description: (Bellini, Strawberry Daiquiri, Margarita)
+    price: 14
+
+- menuName: Non-Alcoholic Beverages
+  items:
+  - item: Soft Drinks
+    description: Pepsi, Diet Pepsi, 7up, Ginger Ale, Iced Tea, Dad's Root Beer, Ginger Beer
+    price: 3
+  - item: Juices
+    description: Orange Juice, Apple Juice, Cranberry Juice, Grapefruit Cocktail, Pineapple Juice, Clamato, Tomato
+    price: 4
+  - item: Perrier
+    price: 4
+  - item: San Pellegrino
+    price: 8 (750ml)
+  - item: Bud Prohibition
+    price: 5
+  - item: Espresso
+    price: Long or Short $4 / Double $6
+  - item: Americano
+    price: 4

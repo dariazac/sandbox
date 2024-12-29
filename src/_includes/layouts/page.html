@@ -1,0 +1,12 @@
+{% extends 'layouts/_base.html' %}
+
+{% block extraStyles %}
+<link rel="stylesheet" href="/assets/css/banner.css">
+<link rel="stylesheet" href="/assets/css/gallery.css">
+{% endblock %}
+
+
+{% block mainContent %}
+  {% block extraContent %}{% endblock %}
+  {{ content | safe }}
+{% endblock %}

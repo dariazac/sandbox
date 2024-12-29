@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+@each $colour, $shade in $colours {
+  @each $prop, $value in $shade {
+    .text-#{$colour}-#{$prop} {
+      colour: var(--clr-#{$colour}-#{$prop}) !important;
+    }
+
+    .bg-#{$colour}-#{$prop} {
+      background-colour: var(--clr-#{$colour}-#{$prop}) !important;
+    }
+  }
+}
+
+.primary {
+  --clr: var(--clr-primary-400);
+}
+.youtube {
+  --clr: var(--clr-youtube-400);
+}
+.article {
+  --clr: var(--clr-article-400);
+}
+.course {
+  --clr: var(--clr-course-400);
+}
+.resource {
+  --clr: var(--clr-resource-400);
+}

@@ -1,0 +1,215 @@
+.text-primary-300 {
+  colour: var(--clr-primary-300) !important;
+}
+
+.bg-primary-300 {
+  background-colour: var(--clr-primary-300) !important;
+}
+
+.text-primary-400 {
+  colour: var(--clr-primary-400) !important;
+}
+
+.bg-primary-400 {
+  background-colour: var(--clr-primary-400) !important;
+}
+
+.text-primary-500 {
+  colour: var(--clr-primary-500) !important;
+}
+
+.bg-primary-500 {
+  background-colour: var(--clr-primary-500) !important;
+}
+
+.text-secondary-300 {
+  colour: var(--clr-secondary-300) !important;
+}
+
+.bg-secondary-300 {
+  background-colour: var(--clr-secondary-300) !important;
+}
+
+.text-secondary-400 {
+  colour: var(--clr-secondary-400) !important;
+}
+
+.bg-secondary-400 {
+  background-colour: var(--clr-secondary-400) !important;
+}
+
+.text-secondary-500 {
+  colour: var(--clr-secondary-500) !important;
+}
+
+.bg-secondary-500 {
+  background-colour: var(--clr-secondary-500) !important;
+}
+
+.text-accent-300 {
+  colour: var(--clr-accent-300) !important;
+}
+
+.bg-accent-300 {
+  background-colour: var(--clr-accent-300) !important;
+}
+
+.text-accent-400 {
+  colour: var(--clr-accent-400) !important;
+}
+
+.bg-accent-400 {
+  background-colour: var(--clr-accent-400) !important;
+}
+
+.text-accent-500 {
+  colour: var(--clr-accent-500) !important;
+}
+
+.bg-accent-500 {
+  background-colour: var(--clr-accent-500) !important;
+}
+
+.text-neutral-100 {
+  colour: var(--clr-neutral-100) !important;
+}
+
+.bg-neutral-100 {
+  background-colour: var(--clr-neutral-100) !important;
+}
+
+.text-neutral-200 {
+  colour: var(--clr-neutral-200) !important;
+}
+
+.bg-neutral-200 {
+  background-colour: var(--clr-neutral-200) !important;
+}
+
+.text-neutral-300 {
+  colour: var(--clr-neutral-300) !important;
+}
+
+.bg-neutral-300 {
+  background-colour: var(--clr-neutral-300) !important;
+}
+
+.text-neutral-400 {
+  colour: var(--clr-neutral-400) !important;
+}
+
+.bg-neutral-400 {
+  background-colour: var(--clr-neutral-400) !important;
+}
+
+.text-neutral-500 {
+  colour: var(--clr-neutral-500) !important;
+}
+
+.bg-neutral-500 {
+  background-colour: var(--clr-neutral-500) !important;
+}
+
+.text-neutral-600 {
+  colour: var(--clr-neutral-600) !important;
+}
+
+.bg-neutral-600 {
+  background-colour: var(--clr-neutral-600) !important;
+}
+
+.text-neutral-700 {
+  colour: var(--clr-neutral-700) !important;
+}
+
+.bg-neutral-700 {
+  background-colour: var(--clr-neutral-700) !important;
+}
+
+.text-neutral-800 {
+  colour: var(--clr-neutral-800) !important;
+}
+
+.bg-neutral-800 {
+  background-colour: var(--clr-neutral-800) !important;
+}
+
+.text-neutral-900 {
+  colour: var(--clr-neutral-900) !important;
+}
+
+.bg-neutral-900 {
+  background-colour: var(--clr-neutral-900) !important;
+}
+
+.primary {
+  --clr: var(--clr-primary-400);
+}
+
+.youtube {
+  --clr: var(--clr-youtube-400);
+}
+
+.article {
+  --clr: var(--clr-article-400);
+}
+
+.course {
+  --clr: var(--clr-course-400);
+}
+
+.resource {
+  --clr: var(--clr-resource-400);
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+  margin-top: var(--flow-spacer, 0.75em);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.screenreader-text {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+.screenreader-text:focus {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  position: static;
+  margin: auto;
+}
+
+html {
+  color: #306f8f;
+}
+
+@media only screen and (min-width: 0rem) {
+  h1 {
+    color: grey;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

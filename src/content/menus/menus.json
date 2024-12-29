@@ -1,0 +1,10 @@
+{
+    "layout": "layouts/_menu.html",
+    "eleventyComputed": {
+        "permalink": "menus/{{ title | slugify }}/index.html",
+        "eleventyNavigation": {
+            "key": "{{ title | slugify }}",
+            "parent": "menus"
+        }
+    }
+}

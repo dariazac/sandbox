@@ -1,0 +1,16 @@
+---
+title: Drinks Menu
+---
+
+<h2>{{ title }}</h2>
+<section id="0-{{ title | slugify}}" class="dz-menus">
+{% for page in menuDrinks %}
+  <h3><a href="#{{ page.menuName | slugify }}">{{ page.menuName }}</a></h3>
+  <ul class='dz-menu-list'>
+    {% for menu in page.items %}
+    <li class="dz-menu-item"><h4>{{ menu.item }}</h4><p class="dz-menu-price">{{ menu.price }}</p>
+    {% if menu.description %} <p class="dz-menu-desc">{{ menu.description }}</p> {% endif %}</li>
+    {% endfor %}
+  </ul>
+{% endfor%}
+</section>
